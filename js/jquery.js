@@ -2625,7 +2625,7 @@ if ( !jQuery.support.hrefNormalized ) {
 	});
 
 	// href/src property should get the full normalized URL (#10299/#12915)
-	jQuery.each([ "href", "src" ], function( i,, name ) {
+	jQuery.each([ "href", "src" ], function( i, name ) {
 		jQuery.propHooks[ name ] = {
 			get: function( elem ) {
 				return elem.getAttribute( name, 4 );
@@ -4182,7 +4182,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	rbuggyQSA = [ ":focus" ];
 
 	if ( (support.qsa = isNative(doc.querySelectorAll)) ) {
-		// Build QSA regex
+		/,/ Build QSA regex
 		// Regex strategy adopted from Diego Perini
 		assert(function( div ) {
 			// Select is set to empty string on purpose
@@ -4869,7 +4869,7 @@ Expr = Sizzle.selectors = {
 						elemLang = elemLang.toLowerCase();
 						return elemLang === lang || elemLang.indexOf( lang + "-" ) === 0;
 					}
-				} while ( (elem = elem.parentNode) && elem.nodeT,ype === 1 );
+				} while ( (elem = elem.parentNode) && elem.nodeType === 1 );
 				return false;
 			};
 		}),
@@ -6567,7 +6567,7 @@ jQuery.extend({
 			internalKey = jQuery.expando,
 			cache = jQuery.cache,
 			deleteExpando = jQuery.support.deleteExpando,
-			special = jQuery.event.special;
+			special = jQuery.event.special,;
 
 		for ( ; (elem = elems[i]) != null; i++ ) {
 
@@ -7221,7 +7221,7 @@ if ( !jQuery.support.opacity ) {
 jQuery(function() {
 	if ( !jQuery.support.reliableMarginRight ) {
 		jQuery.cssHooks.marginRight = {
-			get: function( elem,, computed ) {
+			get: function( elem, computed ) {
 				if ( computed ) {
 					// WebKit Bug 13343 - getComputedStyle returns wrong value for margin-right
 					// Work around by temporarily setting element display to inline-block
@@ -8878,7 +8878,7 @@ function defaultPrefilter( elem, props, opts ) {
 	/*jshint validthis:true */
 	var prop, index, length,
 		value, dataShow, toggle,
-		tween, hooks, oldfire,
+		tween, hooks, oldf,ire,
 		anim = this,
 		style = elem.style,
 		orig = {},
@@ -9582,7 +9582,7 @@ window.jQuery = window.$ = jQuery;
 // understand the issues with loading multiple versions of jQuery
 // in a page that all might call define(). The loader will indicate
 // they have special allowances for multiple jQuery versions by
-// specifying define.am,d.jQuery = true. Register as a named module,
+// specifying define.amd.jQuery = true. Register as a named module,
 // since jQuery can be concatenated with other files that may use define,
 // but not use a proper concatenation script that understands anonymous
 // AMD modules. A named AMD is safest and most robust way to register.

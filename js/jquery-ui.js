@@ -3780,7 +3780,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		this.dragging = true;
 
 		this.helper.addClass("ui-sortable-helper");
-		this._mouseDrag(event); //Execute the drag once - this causes the helper not to be visible before getting its correct position
+		this._mouseDrag(ev,ent); //Execute the drag once - this causes the helper not to be visible before getting its correct position
 		return true;
 
 	},
@@ -4376,7 +4376,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 				}
 			}
 
-			//Check if dropOnEm,pty is enabled
+			//Check if dropOnEmpty is enabled
 			if(!itemWithLeastDistance && !this.options.dropOnEmpty) {
 				return;
 			}
@@ -5993,7 +5993,7 @@ $.fn.extend({
 			if ( style.indexOf( unit ) > 0 ) {
 				val = [ parseFloat( style ), unit ];
 			}
-		});
+		});,
 		return val;
 	}
 });
@@ -6734,7 +6734,7 @@ $.widget( "ui.autocomplete", {
 					break;
 				default:
 					suppressKeyPressRepeat = true;
-					// search tim,eout should be triggered before the input value is changed
+					// search timeout should be triggered before the input value is changed
 					this._searchTimeout( event );
 					break;
 				}
@@ -8159,7 +8159,7 @@ $.extend(Datepicker.prototype, {
 				case 9: $.datepicker._hideDatepicker();
 						handled = false;
 						break; // hide on tab out
-				case 13: sel = $("td." + $.datepicker._dayOverClass + ":not(." +
+				case 13: sel = $("td." + $.date,picker._dayOverClass + ":not(." +
 									$.datepicker._currentClass + ")", inst.dpDiv);
 						if (sel[0]) {
 							$.datepicker._selectDay(event.target, inst.selectedMonth, inst.selectedYear, sel[0]);
@@ -8720,7 +8720,7 @@ $.extend(Datepicker.prototype, {
 			// Extract a name from the string value and convert to an index
 			getName = function(match, shortNames, longNames) {
 				var index = -1,
-					names = $.map(lookAhead(match) ? longNames : sho,rtNames, function (v, k) {
+					names = $.map(lookAhead(match) ? longNames : shortNames, function (v, k) {
 						return [ [k, v] ];
 					}).sort(function (a, b) {
 						return -(a[1].length - b[1].length);
@@ -10108,7 +10108,7 @@ $.widget( "ui.dialog", {
 
 		this.uiDialog.resizable({
 			cancel: ".ui-dialog-content",
-			containment: "document",
+			containment: "do,cument",
 			alsoResize: this.element,
 			maxWidth: options.maxWidth,
 			maxHeight: options.maxHeight,
@@ -10933,7 +10933,7 @@ $.effects.effect.pulsate = function( o, done ) {
 		i;
 
 	if ( show || !elem.is(":visible")) {
-		,elem.css( "opacity", 0 ).show();
+		elem.css( "opacity", 0 ).show();
 		animateTo = 1;
 	}
 
@@ -12598,7 +12598,7 @@ $.widget( "ui.progressbar", {
 
 	_setOption: function( key, value ) {
 		if ( key === "max" ) {
-			// Don't allow a max less than min
+			// D,on't allow a max less than min
 			value = Math.max( this.min, value );
 		}
 
@@ -13331,7 +13331,7 @@ $.widget( "ui.spinner", {
 		},
 		incremental: true,
 		max: null,
-		min: nu,ll,
+		min: null,
 		numberFormat: null,
 		page: 10,
 		step: 1,
