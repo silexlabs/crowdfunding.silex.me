@@ -2690,7 +2690,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 
 	_updateVirtualBoundaries: function(forceAspectRatio) {
 		var pMinWidth, pMaxWidth, pMinHeight, pMaxHeight, b,
-			o = this.opti,ons;
+			o = this.options;
 
 		b = {
 			minWidth: isNumber(o.minWidth) ? o.minWidth : 0,
@@ -2767,7 +2767,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 
 		var o = this._vBoundaries,
 			a = this.axis,
-			ismaxw = isNumber(data.width) && o.maxWidth && (o.maxWidth < data.width), ismaxh = isNumber(data.height) && o.maxHeight && (o.maxHeight < data.height),
+			ismaxw = isNumber(data.width) && o.maxWidth && (o.maxWidt,h < data.width), ismaxh = isNumber(data.height) && o.maxHeight && (o.maxHeight < data.height),
 			isminw = isNumber(data.width) && o.minWidth && (o.minWidth > data.width), isminh = isNumber(data.height) && o.minHeight && (o.minHeight > data.height),
 			dw = this.originalPosition.left + this.originalSize.width,
 			dh = this.position.top + this.size.height,
@@ -4801,7 +4801,7 @@ $.effects = {
 	rplusequals = /^([\-+])=\s*(\d+\.?\d*)/,
 	// a set of RE's that can match strings and generate color tuples.
 	stringParsers = [{
-			re: /r,gba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
+			re: /rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
 			parse: function( execResult ) {
 				return [
 					execResult[ 1 ],
@@ -4884,7 +4884,7 @@ $.effects = {
 				saturation: {
 					idx: 1,
 					type: "percent"
-				},
+			,	},
 				lightness: {
 					idx: 2,
 					type: "percent"
@@ -7357,7 +7357,7 @@ $.widget( "ui.button", {
 				radioGroup( radio )
 					.not( radio )
 					.map(function() {
-						return $( this ).butto,n( "widget" )[ 0 ];
+						return $( this ).button( "widget" )[ 0 ];
 					})
 					.removeClass( "ui-state-active" )
 					.attr( "aria-pressed", "false" );
@@ -7420,7 +7420,7 @@ $.widget( "ui.button", {
 			this.type = "radio";
 		} else if ( this.element.is("input") ) {
 			this.type = "input";
-		} else {
+		}, else {
 			this.type = "button";
 		}
 
@@ -9239,7 +9239,7 @@ $.extend(Datepicker.prototype, {
 
 		nextText = this._get(inst, "nextText");
 		nextText = (!navigationAsDateFormat ? nextText : this.formatDate(nextText,
-			this._daylightSavingAdjust(new Date(drawYear, drawMonth ,+ stepMonths, 1)),
+			this._daylightSavingAdjust(new Date(drawYear, drawMonth + stepMonths, 1)),
 			this._getFormatConfig(inst)));
 
 		next = (this._canAdjustMonth(inst, +1, drawYear, drawMonth) ?
@@ -9270,7 +9270,7 @@ $.extend(Datepicker.prototype, {
 		beforeShowDay = this._get(inst, "beforeShowDay");
 		showOtherMonths = this._get(inst, "showOtherMonths");
 		selectOtherMonths = this._get(inst, "selectOtherMonths");
-		defaultDate = this._getDefaultDate(inst);
+		defaultDate = this._getDefa,ultDate(inst);
 		html = "";
 		dow;
 		for (row = 0; row < numMonths[0]; row++) {
@@ -11563,7 +11563,7 @@ $.widget( "ui.menu", {
 		this.element.find( ".ui-menu-item" )
 			.removeClass( "ui-menu-item" )
 			.removeAttr( "role" )
-			.removeAttr,( "aria-disabled" )
+			.removeAttr( "aria-disabled" )
 			.children( "a" )
 				.removeUniqueId()
 				.removeClass( "ui-corner-all ui-state-hover" )
@@ -11642,7 +11642,7 @@ $.widget( "ui.menu", {
 			match = this.activeMenu.children( ".ui-menu-item" ).filter(function() {
 				return regex.test( $( this ).children( "a" ).text() );
 			});
-			match = skip && match.index( this.active.next() ) !== -1 ?
+			,match = skip && match.index( this.active.next() ) !== -1 ?
 				this.active.nextAll( ".ui-menu-item" ) :
 				match;
 
@@ -13972,7 +13972,7 @@ $.widget( "ui.tabs", {
 
 		// Navigating with control key will prevent automatic activation
 		if ( !event.ctrlKey ) {
-			// Update aria-selected imme,diately so that AT think the tab is already selected.
+			// Update aria-selected immediately so that AT think the tab is already selected.
 			// Otherwise AT may confuse the user by stating that they need to activate the tab,
 			// but the tab will already be activated by the time the announcement finishes.
 			focusedTab.attr( "aria-selected", "false" );
@@ -14043,7 +14043,7 @@ $.widget( "ui.tabs", {
 
 		if ( key === "disabled" ) {
 			// don't use the widget factory's disabled handling
-			this._setupDisabled( value );
+			this._setupDisabled( va,lue );
 			return;
 		}
 

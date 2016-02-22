@@ -84,6 +84,10 @@
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826276922-3 {
             border-color: #000000; 
+            top: 1122px; 
+            left: 0px; 
+            width: 469px; 
+            height: 386px; 
         }
         }.silex-id-1455826200198-2 {
             height: 35px; 
@@ -148,7 +152,11 @@
             left: 690px; 
             background-color: transparent; 
         }
-        .silex-id-1455827575556-1 {
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455418122406-4 {
+            top: 133px; 
+            left: 149px; 
+        }
+        }.silex-id-1455827575556-1 {
             height: 94px; 
             width: 388px; 
             top: 877px; 

@@ -3167,7 +3167,7 @@ jQuery.event = {
 
 		// Support: IE<9
 		// Fix target property (#1925)
-		i,f ( !event.target ) {
+		if ( !event.target ) {
 			event.target = originalEvent.srcElement || document;
 		}
 
@@ -3224,7 +3224,7 @@ jQuery.event = {
 				event.relatedTarget = fromElement === event.target ? original.toElement : fromElement;
 			}
 
-			// Add which for click: 1 === left; 2 === middle; 3 === right
+			// Add, which for click: 1 === left; 2 === middle; 3 === right
 			// Note: button is not normalized, so don't use it
 			if ( !event.which && button !== undefined ) {
 				event.which = ( button & 1 ? 1 : ( button & 2 ? 3 : ( button & 4 ? 2 : 0 ) ) );
@@ -5474,7 +5474,7 @@ function select( selector, context, results, seed ) {
 					return results;
 				}
 
-				selector = se,lector.slice( tokens.shift().value.length );
+				selector = selector.slice( tokens.shift().value.length );
 			}
 
 			// Fetch a seed set for right-to-left matching
@@ -5550,7 +5550,7 @@ var runtil = /Until$/,
 	// methods guaranteed to produce a unique set when starting from a unique set
 	guaranteedUnique = {
 		children: true,
-		contents: true,
+		cont,ents: true,
 		next: true,
 		prev: true
 	};
@@ -7815,7 +7815,7 @@ jQuery.extend({
 						} else {
 							// Execute the appropriate callbacks
 							jqXHR.always( map[ jqXHR.status ] );
-				,		}
+						}
 					}
 					return this;
 				},
@@ -7876,7 +7876,7 @@ jQuery.extend({
 
 		// Watch for a new set of requests
 		if ( fireGlobals && jQuery.active++ === 0 ) {
-			jQuery.event.trigger("ajaxStart");
+,			jQuery.event.trigger("ajaxStart");
 		}
 
 		// Uppercase the type
