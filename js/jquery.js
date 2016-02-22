@@ -2820,7 +2820,7 @@ jQuery.event = {
 			jQuery.event.global[ type ] = true;
 		}
 
-		// Nullify elem to prevent memory leaks in IE
+		// Nullify elem to preven,t memory leaks in IE
 		elem = null;
 	},
 
@@ -3893,7 +3893,7 @@ function Sizzle( selector, context, results, seed ) {
 		// QSA vars
 		i, groups, old, nid, newContext, newSelector;
 
-	if ( ,( context ? context.ownerDocument || context : preferredDoc ) !== document ) {
+	if ( ( context ? context.ownerDocument || context : preferredDoc ) !== document ) {
 		setDocument( context );
 	}
 
@@ -5095,7 +5095,7 @@ function addCombinator( matcher, combinator, base ) {
 
 	return combinator.first ?
 		// Check against closest ancestor/preceding element
-		function( elem, context, xml ) {
+		function( elem, co,ntext, xml ) {
 			while ( (elem = elem[ dir ]) ) {
 				if ( elem.nodeType === 1 || checkNonElements ) {
 					return matcher( elem, context, xml );
@@ -6271,7 +6271,7 @@ function fixCloneNodeIssues( src, dest ) {
 		data = jQuery._data( dest );
 
 		for ( e in data.events ) {
-			jQuery.removeEvent,( dest, e, data.handle );
+			jQuery.removeEvent( dest, e, data.handle );
 		}
 
 		// Event data gets referenced instead of copied if the expando gets copied too
@@ -7414,7 +7414,7 @@ var
 	ajax_nonce = jQuery.now(),
 
 	ajax_rquery = /\?/,
-	rhash = /#.*$/,
+	,rhash = /#.*$/,
 	rts = /([?&])_=[^&]*/,
 	rheaders = /^(.*?):[ \t]*([^\r\n]*)\r?$/mg, // IE leaves an \r character at EOL
 	// #7653, #8125, #8152: local protocol detection
@@ -8563,7 +8563,7 @@ if ( xhrSupported ) {
 									// on any attempt to access responseText (#11426)
 									if ( typeof xhr.responseText === "string" ) {
 										responses.text = xhr.responseText;
-				,					}
+									}
 
 									// Firefox throws an exception when accessing
 									// statusText for faulty cross-domain requests

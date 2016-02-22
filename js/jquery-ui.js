@@ -2324,7 +2324,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 		start: null,
 		stop: null
 	},
-	_create: function() {
+	_create: funct,ion() {
 
 		var n, i, handle, axis, hname,
 			that = this,
@@ -3439,7 +3439,7 @@ $.widget("ui.selectable", $.ui.mouse, {
 						selectee.selected = true;
 					} else {
 						selectee.$element.removeClass("ui-selecting");
-						selectee.selecting = fals,e;
+						selectee.selecting = false;
 						if (selectee.startselected) {
 							selectee.$element.addClass("ui-unselecting");
 							selectee.unselecting = true;
@@ -4528,7 +4528,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 				co.left + (parseInt($(ce).css("borderLeftWidth"),10) || 0) + (parseInt($(ce).css("paddingLeft"),10) || 0) - this.margins.left,
 				co.top + (parseInt($(ce).css("borderTopWidth"),10) || 0) + (parseInt($(ce).css("paddingTop"),10) || 0) - this.margins.top,
 				co.left+(over ? Math.max(ce.scrollWidth,ce.offsetWidth) : ce.offsetWidth) - (parseInt($(ce).css("borderLeftWidth"),10) || 0) - (parseInt($(ce).css("paddingRight"),10) || 0) - this.helperProportions.width - this.margins.left,
-				co.top+(over ? Math.max(ce.scrollHeight,ce.offsetHeight) : ce.offsetHeight) - (parseInt($(ce).css("borderTopWidth"),10) || 0) - (parseInt($(ce).css("paddingBottom"),10) || 0) - this.helperProportions.height - this.margins.top
+				co.top+(over ? Math.max(ce.scrollHeight,ce.offsetHeight) : ce.offsetHeight) - (parseInt($(ce).css,("borderTopWidth"),10) || 0) - (parseInt($(ce).css("paddingBottom"),10) || 0) - this.helperProportions.height - this.margins.top
 			];
 		}
 
@@ -5646,7 +5646,7 @@ $.fn.extend({
 	switchClass: function( remove, add, speed, easing, callback) {
 		return $.effects.animateClass.call( this, {
 			add: add,
-			,remove: remove
+			remove: remove
 		}, speed, easing, callback );
 	}
 });
@@ -6936,7 +6936,7 @@ $.widget( "ui.autocomplete", {
 		var element = this.options.appendTo;
 
 		if ( element ) {
-			element = element.jquery || element.nodeType ?
+			ele,ment = element.jquery || element.nodeType ?
 				$( element ) :
 				this.document.find( element ).eq( 0 );
 		}
@@ -7901,7 +7901,7 @@ $.extend(Datepicker.prototype, {
 			this.uuid += 1;
 			id = "dp" + this.uuid;
 			this._dialogInput = $("<input type='text' id='" + id +
-				"' style='position: absolute; top: -100px,; width: 0px;'/>");
+				"' style='position: absolute; top: -100px; width: 0px;'/>");
 			this._dialogInput.keydown(this._doKeyDown);
 			$("body").append(this._dialogInput);
 			inst = this._dialogInst = this._newInst(this._dialogInput, false);
@@ -8926,7 +8926,7 @@ $.extend(Datepicker.prototype, {
 					switch (format.charAt(iFormat)) {
 						case "d":
 							output += formatNumber("d", date.getDate(), 2);
-							break;
+				,			break;
 						case "D":
 							output += formatName("D", date.getDay(), dayNamesShort, dayNames);
 							break;
@@ -9779,7 +9779,7 @@ $.widget( "ui.dialog", {
 		next = originalPosition.parent.children().eq( originalPosition.index );
 		// Don't try to place the dialog next to itself (#8613)
 		if ( next.length && next[0] !== this.element[0] ) {
-			next.before( this.elem,ent );
+			next.before( this.element );
 		} else {
 			originalPosition.parent.append( this.element );
 		}
@@ -11163,7 +11163,7 @@ $.effects.effect.size = function( o, done ) {
 		el.from.top = ( original.outerHeight - el.outerHeight() ) * baseline.y;
 		el.from.left = ( original.outerWidth - el.outerWidth() ) * baseline.x;
 		el.to.top = ( original.outerHeight - el.to.outerHeight ) * baseline.y;
-		el.to.left = ( original.outerWidth - el.to.outerWidth ) * baseline.x;
+		el.to.left = ( original.outerWidth - el.to.,outerWidth ) * baseline.x;
 	}
 	el.css( el.from ); // set top & left
 
@@ -12321,7 +12321,7 @@ $.ui.position = {
 				withinOffset = within.isWindow ? within.scrollLeft : within.offset.left,
 				outerWidth = within.width,
 				collisionPosLeft = position.left - data.collisionPosition.marginLeft,
-				overLeft = withi,nOffset - collisionPosLeft,
+				overLeft = withinOffset - collisionPosLeft,
 				overRight = collisionPosLeft + data.collisionWidth - outerWidth - withinOffset,
 				newOverRight;
 
@@ -13541,7 +13541,7 @@ $.widget( "ui.spinner", {
 			"<a class='ui-spinner-button ui-spinner-up ui-corner-tr'>" +
 				"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
 			"</a>" +
-			"<a class='ui-spinner-button ui-spinner-down ui-corner-br'>" +
+			"<a class='ui-spinner-button ui-spinner-down ui-corner-b,r'>" +
 				"<span class='ui-icon " + this.options.icons.down + "'>&#9660;</span>" +
 			"</a>";
 	},
@@ -14780,7 +14780,7 @@ $.widget( "ui.tooltip", {
 		}
 
 		this._updateContent( target, event );
-	},,
+	},
 
 	_updateContent: function( target, event ) {
 		var content,
