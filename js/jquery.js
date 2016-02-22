@@ -3224,7 +3224,7 @@ jQuery.event = {
 				event.relatedTarget = fromElement === event.target ? original.toElement : fromElement;
 			}
 
-			// Add, which for click: 1 === left; 2 === middle; 3 === right
+			// Add which for click: 1 === left; 2 === middle; 3 === right
 			// Note: button is not normalized, so don't use it
 			if ( !event.which && button !== undefined ) {
 				event.which = ( button & 1 ? 1 : ( button & 2 ? 3 : ( button & 4 ? 2 : 0 ) ) );
@@ -3975,7 +3975,7 @@ function Sizzle( selector, context, results, seed ) {
 					groups[i] = nid + toSelector( groups[i] );
 				}
 				newContext = rsibling.test( selector ) && context.parentNode || context;
-				newSelector = groups.join(",");
+				newSelector = groups.jo,in(",");
 			}
 
 			if ( newSelector ) {
@@ -5550,7 +5550,7 @@ var runtil = /Until$/,
 	// methods guaranteed to produce a unique set when starting from a unique set
 	guaranteedUnique = {
 		children: true,
-		cont,ents: true,
+		contents: true,
 		next: true,
 		prev: true
 	};
@@ -6342,7 +6342,7 @@ jQuery.each({
 			jQuery( insert[i] )[ original ]( elems );
 
 			// Modern browsers can apply jQuery collections as arrays, but oldIE needs a .get()
-			core_push.apply( ret, elems.get() );
+			core_push.,apply( ret, elems.get() );
 		}
 
 		return this.pushStack( ret );
@@ -7876,7 +7876,7 @@ jQuery.extend({
 
 		// Watch for a new set of requests
 		if ( fireGlobals && jQuery.active++ === 0 ) {
-,			jQuery.event.trigger("ajaxStart");
+			jQuery.event.trigger("ajaxStart");
 		}
 
 		// Uppercase the type
@@ -8650,7 +8650,7 @@ var fxNow, timerId,
 				end = +parts[2];
 				unit = parts[3] || ( jQuery.cssNumber[ prop ] ? "" : "px" );
 
-				// We need to compute starting value
+				// We need to compute st,arting value
 				if ( unit !== "px" && start ) {
 					// Iteratively approximate from a nonzero starting point
 					// Prefer the current property, because this process will be trivial if it uses the same units

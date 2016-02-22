@@ -2767,7 +2767,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 
 		var o = this._vBoundaries,
 			a = this.axis,
-			ismaxw = isNumber(data.width) && o.maxWidth && (o.maxWidt,h < data.width), ismaxh = isNumber(data.height) && o.maxHeight && (o.maxHeight < data.height),
+			ismaxw = isNumber(data.width) && o.maxWidth && (o.maxWidth < data.width), ismaxh = isNumber(data.height) && o.maxHeight && (o.maxHeight < data.height),
 			isminw = isNumber(data.width) && o.minWidth && (o.minWidth > data.width), isminh = isNumber(data.height) && o.minHeight && (o.minHeight > data.height),
 			dw = this.originalPosition.left + this.originalSize.width,
 			dh = this.position.top + this.size.height,
@@ -3547,7 +3547,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		// callbacks
 		activate: null,
 		beforeStop: null,
-		change: null,
+		chan,ge: null,
 		deactivate: null,
 		out: null,
 		over: null,
@@ -4884,7 +4884,7 @@ $.effects = {
 				saturation: {
 					idx: 1,
 					type: "percent"
-			,	},
+				},
 				lightness: {
 					idx: 2,
 					type: "percent"
@@ -5738,7 +5738,7 @@ $.extend( $.effects, {
 				.css({
 					fontSize: "100%",
 					background: "transparent",
-					border: "none",
+					border: "none,",
 					margin: 0,
 					padding: 0
 				}),
@@ -7420,7 +7420,7 @@ $.widget( "ui.button", {
 			this.type = "radio";
 		} else if ( this.element.is("input") ) {
 			this.type = "input";
-		}, else {
+		} else {
 			this.type = "button";
 		}
 
@@ -7974,7 +7974,7 @@ $.extend(Datepicker.prototype, {
 			return;
 		}
 
-		nodeName = target.nodeName.toLowerCase();
+		nodeName = target.nodeName.toLowerCase,();
 		if (nodeName === "input") {
 			target.disabled = false;
 			inst.trigger.filter("button").
@@ -9270,7 +9270,7 @@ $.extend(Datepicker.prototype, {
 		beforeShowDay = this._get(inst, "beforeShowDay");
 		showOtherMonths = this._get(inst, "showOtherMonths");
 		selectOtherMonths = this._get(inst, "selectOtherMonths");
-		defaultDate = this._getDefa,ultDate(inst);
+		defaultDate = this._getDefaultDate(inst);
 		html = "";
 		dow;
 		for (row = 0; row < numMonths[0]; row++) {
@@ -9883,7 +9883,7 @@ $.widget( "ui.dialog", {
 				isActive = this.uiDialog[0] === activeElement ||
 					$.contains( this.uiDialog[0], activeElement );
 			if ( !isActive ) {
-				this._focusTabbable();
+				this._fo,cusTabbable();
 			}
 		}
 		event.preventDefault();
@@ -11642,7 +11642,7 @@ $.widget( "ui.menu", {
 			match = this.activeMenu.children( ".ui-menu-item" ).filter(function() {
 				return regex.test( $( this ).children( "a" ).text() );
 			});
-			,match = skip && match.index( this.active.next() ) !== -1 ?
+			match = skip && match.index( this.active.next() ) !== -1 ?
 				this.active.nextAll( ".ui-menu-item" ) :
 				match;
 
@@ -12384,7 +12384,7 @@ $.ui.position = {
 				position.top += overTop;
 			// too far down -> align with bottom edge
 			} else if ( overBottom > 0 ) {
-				position.top -= overBottom;
+				positi,on.top -= overBottom;
 			// adjust based on position and margin
 			} else {
 				position.top = max( position.top - collisionPosTop, position.top );
@@ -14043,7 +14043,7 @@ $.widget( "ui.tabs", {
 
 		if ( key === "disabled" ) {
 			// don't use the widget factory's disabled handling
-			this._setupDisabled( va,lue );
+			this._setupDisabled( value );
 			return;
 		}
 
@@ -14858,7 +14858,7 @@ $.widget( "ui.tooltip", {
 			}
 			tooltip.position( positionOption );
 		}
-		if ( this.options.track && event && /^mouse/.test( event.type ) ) {
+		if ( this.options.track &&, event && /^mouse/.test( event.type ) ) {
 			this._on( this.document, {
 				mousemove: position
 			});
