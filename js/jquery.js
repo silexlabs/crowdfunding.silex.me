@@ -2820,7 +2820,7 @@ jQuery.event = {
 			jQuery.event.global[ type ] = true;
 		}
 
-		// Nullify elem to preven,t memory leaks in IE
+		// Nullify elem to prevent memory leaks in IE
 		elem = null;
 	},
 
@@ -3167,7 +3167,7 @@ jQuery.event = {
 
 		// Support: IE<9
 		// Fix target property (#1925)
-		if ( !event.target ) {
+		i,f ( !event.target ) {
 			event.target = originalEvent.srcElement || document;
 		}
 
@@ -5095,7 +5095,7 @@ function addCombinator( matcher, combinator, base ) {
 
 	return combinator.first ?
 		// Check against closest ancestor/preceding element
-		function( elem, co,ntext, xml ) {
+		function( elem, context, xml ) {
 			while ( (elem = elem[ dir ]) ) {
 				if ( elem.nodeType === 1 || checkNonElements ) {
 					return matcher( elem, context, xml );
@@ -5474,7 +5474,7 @@ function select( selector, context, results, seed ) {
 					return results;
 				}
 
-				selector = selector.slice( tokens.shift().value.length );
+				selector = se,lector.slice( tokens.shift().value.length );
 			}
 
 			// Fetch a seed set for right-to-left matching
@@ -7414,7 +7414,7 @@ var
 	ajax_nonce = jQuery.now(),
 
 	ajax_rquery = /\?/,
-	,rhash = /#.*$/,
+	rhash = /#.*$/,
 	rts = /([?&])_=[^&]*/,
 	rheaders = /^(.*?):[ \t]*([^\r\n]*)\r?$/mg, // IE leaves an \r character at EOL
 	// #7653, #8125, #8152: local protocol detection
@@ -7815,7 +7815,7 @@ jQuery.extend({
 						} else {
 							// Execute the appropriate callbacks
 							jqXHR.always( map[ jqXHR.status ] );
-						}
+				,		}
 					}
 					return this;
 				},

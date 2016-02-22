@@ -2324,7 +2324,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 		start: null,
 		stop: null
 	},
-	_create: funct,ion() {
+	_create: function() {
 
 		var n, i, handle, axis, hname,
 			that = this,
@@ -2690,7 +2690,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 
 	_updateVirtualBoundaries: function(forceAspectRatio) {
 		var pMinWidth, pMaxWidth, pMinHeight, pMaxHeight, b,
-			o = this.options;
+			o = this.opti,ons;
 
 		b = {
 			minWidth: isNumber(o.minWidth) ? o.minWidth : 0,
@@ -4528,7 +4528,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 				co.left + (parseInt($(ce).css("borderLeftWidth"),10) || 0) + (parseInt($(ce).css("paddingLeft"),10) || 0) - this.margins.left,
 				co.top + (parseInt($(ce).css("borderTopWidth"),10) || 0) + (parseInt($(ce).css("paddingTop"),10) || 0) - this.margins.top,
 				co.left+(over ? Math.max(ce.scrollWidth,ce.offsetWidth) : ce.offsetWidth) - (parseInt($(ce).css("borderLeftWidth"),10) || 0) - (parseInt($(ce).css("paddingRight"),10) || 0) - this.helperProportions.width - this.margins.left,
-				co.top+(over ? Math.max(ce.scrollHeight,ce.offsetHeight) : ce.offsetHeight) - (parseInt($(ce).css,("borderTopWidth"),10) || 0) - (parseInt($(ce).css("paddingBottom"),10) || 0) - this.helperProportions.height - this.margins.top
+				co.top+(over ? Math.max(ce.scrollHeight,ce.offsetHeight) : ce.offsetHeight) - (parseInt($(ce).css("borderTopWidth"),10) || 0) - (parseInt($(ce).css("paddingBottom"),10) || 0) - this.helperProportions.height - this.margins.top
 			];
 		}
 
@@ -4801,7 +4801,7 @@ $.effects = {
 	rplusequals = /^([\-+])=\s*(\d+\.?\d*)/,
 	// a set of RE's that can match strings and generate color tuples.
 	stringParsers = [{
-			re: /rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
+			re: /r,gba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
 			parse: function( execResult ) {
 				return [
 					execResult[ 1 ],
@@ -6936,7 +6936,7 @@ $.widget( "ui.autocomplete", {
 		var element = this.options.appendTo;
 
 		if ( element ) {
-			ele,ment = element.jquery || element.nodeType ?
+			element = element.jquery || element.nodeType ?
 				$( element ) :
 				this.document.find( element ).eq( 0 );
 		}
@@ -7357,7 +7357,7 @@ $.widget( "ui.button", {
 				radioGroup( radio )
 					.not( radio )
 					.map(function() {
-						return $( this ).button( "widget" )[ 0 ];
+						return $( this ).butto,n( "widget" )[ 0 ];
 					})
 					.removeClass( "ui-state-active" )
 					.attr( "aria-pressed", "false" );
@@ -8926,7 +8926,7 @@ $.extend(Datepicker.prototype, {
 					switch (format.charAt(iFormat)) {
 						case "d":
 							output += formatNumber("d", date.getDate(), 2);
-				,			break;
+							break;
 						case "D":
 							output += formatName("D", date.getDay(), dayNamesShort, dayNames);
 							break;
@@ -9239,7 +9239,7 @@ $.extend(Datepicker.prototype, {
 
 		nextText = this._get(inst, "nextText");
 		nextText = (!navigationAsDateFormat ? nextText : this.formatDate(nextText,
-			this._daylightSavingAdjust(new Date(drawYear, drawMonth + stepMonths, 1)),
+			this._daylightSavingAdjust(new Date(drawYear, drawMonth ,+ stepMonths, 1)),
 			this._getFormatConfig(inst)));
 
 		next = (this._canAdjustMonth(inst, +1, drawYear, drawMonth) ?
@@ -11163,7 +11163,7 @@ $.effects.effect.size = function( o, done ) {
 		el.from.top = ( original.outerHeight - el.outerHeight() ) * baseline.y;
 		el.from.left = ( original.outerWidth - el.outerWidth() ) * baseline.x;
 		el.to.top = ( original.outerHeight - el.to.outerHeight ) * baseline.y;
-		el.to.left = ( original.outerWidth - el.to.,outerWidth ) * baseline.x;
+		el.to.left = ( original.outerWidth - el.to.outerWidth ) * baseline.x;
 	}
 	el.css( el.from ); // set top & left
 
@@ -11563,7 +11563,7 @@ $.widget( "ui.menu", {
 		this.element.find( ".ui-menu-item" )
 			.removeClass( "ui-menu-item" )
 			.removeAttr( "role" )
-			.removeAttr( "aria-disabled" )
+			.removeAttr,( "aria-disabled" )
 			.children( "a" )
 				.removeUniqueId()
 				.removeClass( "ui-corner-all ui-state-hover" )
@@ -13541,7 +13541,7 @@ $.widget( "ui.spinner", {
 			"<a class='ui-spinner-button ui-spinner-up ui-corner-tr'>" +
 				"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
 			"</a>" +
-			"<a class='ui-spinner-button ui-spinner-down ui-corner-b,r'>" +
+			"<a class='ui-spinner-button ui-spinner-down ui-corner-br'>" +
 				"<span class='ui-icon " + this.options.icons.down + "'>&#9660;</span>" +
 			"</a>";
 	},
@@ -13972,7 +13972,7 @@ $.widget( "ui.tabs", {
 
 		// Navigating with control key will prevent automatic activation
 		if ( !event.ctrlKey ) {
-			// Update aria-selected immediately so that AT think the tab is already selected.
+			// Update aria-selected imme,diately so that AT think the tab is already selected.
 			// Otherwise AT may confuse the user by stating that they need to activate the tab,
 			// but the tab will already be activated by the time the announcement finishes.
 			focusedTab.attr( "aria-selected", "false" );
