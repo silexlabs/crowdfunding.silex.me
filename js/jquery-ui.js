@@ -3547,7 +3547,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		// callbacks
 		activate: null,
 		beforeStop: null,
-		chan,ge: null,
+		change: null,
 		deactivate: null,
 		out: null,
 		over: null,
@@ -4376,7 +4376,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 				}
 			}
 
-			//Check if dropOnEmpty is enabled
+			//Check if dropOnEm,pty is enabled
 			if(!itemWithLeastDistance && !this.options.dropOnEmpty) {
 				return;
 			}
@@ -5738,7 +5738,7 @@ $.extend( $.effects, {
 				.css({
 					fontSize: "100%",
 					background: "transparent",
-					border: "none,",
+					border: "none",
 					margin: 0,
 					padding: 0
 				}),
@@ -6734,7 +6734,7 @@ $.widget( "ui.autocomplete", {
 					break;
 				default:
 					suppressKeyPressRepeat = true;
-					// search timeout should be triggered before the input value is changed
+					// search tim,eout should be triggered before the input value is changed
 					this._searchTimeout( event );
 					break;
 				}
@@ -7974,7 +7974,7 @@ $.extend(Datepicker.prototype, {
 			return;
 		}
 
-		nodeName = target.nodeName.toLowerCase,();
+		nodeName = target.nodeName.toLowerCase();
 		if (nodeName === "input") {
 			target.disabled = false;
 			inst.trigger.filter("button").
@@ -8720,7 +8720,7 @@ $.extend(Datepicker.prototype, {
 			// Extract a name from the string value and convert to an index
 			getName = function(match, shortNames, longNames) {
 				var index = -1,
-					names = $.map(lookAhead(match) ? longNames : shortNames, function (v, k) {
+					names = $.map(lookAhead(match) ? longNames : sho,rtNames, function (v, k) {
 						return [ [k, v] ];
 					}).sort(function (a, b) {
 						return -(a[1].length - b[1].length);
@@ -9883,7 +9883,7 @@ $.widget( "ui.dialog", {
 				isActive = this.uiDialog[0] === activeElement ||
 					$.contains( this.uiDialog[0], activeElement );
 			if ( !isActive ) {
-				this._fo,cusTabbable();
+				this._focusTabbable();
 			}
 		}
 		event.preventDefault();
@@ -10933,7 +10933,7 @@ $.effects.effect.pulsate = function( o, done ) {
 		i;
 
 	if ( show || !elem.is(":visible")) {
-		elem.css( "opacity", 0 ).show();
+		,elem.css( "opacity", 0 ).show();
 		animateTo = 1;
 	}
 
@@ -12384,7 +12384,7 @@ $.ui.position = {
 				position.top += overTop;
 			// too far down -> align with bottom edge
 			} else if ( overBottom > 0 ) {
-				positi,on.top -= overBottom;
+				position.top -= overBottom;
 			// adjust based on position and margin
 			} else {
 				position.top = max( position.top - collisionPosTop, position.top );
@@ -13331,7 +13331,7 @@ $.widget( "ui.spinner", {
 		},
 		incremental: true,
 		max: null,
-		min: null,
+		min: nu,ll,
 		numberFormat: null,
 		page: 10,
 		step: 1,
@@ -14858,7 +14858,7 @@ $.widget( "ui.tooltip", {
 			}
 			tooltip.position( positionOption );
 		}
-		if ( this.options.track &&, event && /^mouse/.test( event.type ) ) {
+		if ( this.options.track && event && /^mouse/.test( event.type ) ) {
 			this._on( this.document, {
 				mousemove: position
 			});

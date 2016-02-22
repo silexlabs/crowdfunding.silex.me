@@ -2625,7 +2625,7 @@ if ( !jQuery.support.hrefNormalized ) {
 	});
 
 	// href/src property should get the full normalized URL (#10299/#12915)
-	jQuery.each([ "href", "src" ], function( i, name ) {
+	jQuery.each([ "href", "src" ], function( i,, name ) {
 		jQuery.propHooks[ name ] = {
 			get: function( elem ) {
 				return elem.getAttribute( name, 4 );
@@ -3975,7 +3975,7 @@ function Sizzle( selector, context, results, seed ) {
 					groups[i] = nid + toSelector( groups[i] );
 				}
 				newContext = rsibling.test( selector ) && context.parentNode || context;
-				newSelector = groups.jo,in(",");
+				newSelector = groups.join(",");
 			}
 
 			if ( newSelector ) {
@@ -4869,7 +4869,7 @@ Expr = Sizzle.selectors = {
 						elemLang = elemLang.toLowerCase();
 						return elemLang === lang || elemLang.indexOf( lang + "-" ) === 0;
 					}
-				} while ( (elem = elem.parentNode) && elem.nodeType === 1 );
+				} while ( (elem = elem.parentNode) && elem.nodeT,ype === 1 );
 				return false;
 			};
 		}),
@@ -6342,7 +6342,7 @@ jQuery.each({
 			jQuery( insert[i] )[ original ]( elems );
 
 			// Modern browsers can apply jQuery collections as arrays, but oldIE needs a .get()
-			core_push.,apply( ret, elems.get() );
+			core_push.apply( ret, elems.get() );
 		}
 
 		return this.pushStack( ret );
@@ -7221,7 +7221,7 @@ if ( !jQuery.support.opacity ) {
 jQuery(function() {
 	if ( !jQuery.support.reliableMarginRight ) {
 		jQuery.cssHooks.marginRight = {
-			get: function( elem, computed ) {
+			get: function( elem,, computed ) {
 				if ( computed ) {
 					// WebKit Bug 13343 - getComputedStyle returns wrong value for margin-right
 					// Work around by temporarily setting element display to inline-block
@@ -8650,7 +8650,7 @@ var fxNow, timerId,
 				end = +parts[2];
 				unit = parts[3] || ( jQuery.cssNumber[ prop ] ? "" : "px" );
 
-				// We need to compute st,arting value
+				// We need to compute starting value
 				if ( unit !== "px" && start ) {
 					// Iteratively approximate from a nonzero starting point
 					// Prefer the current property, because this process will be trivial if it uses the same units
@@ -9582,7 +9582,7 @@ window.jQuery = window.$ = jQuery;
 // understand the issues with loading multiple versions of jQuery
 // in a page that all might call define(). The loader will indicate
 // they have special allowances for multiple jQuery versions by
-// specifying define.amd.jQuery = true. Register as a named module,
+// specifying define.am,d.jQuery = true. Register as a named module,
 // since jQuery can be concatenated with other files that may use define,
 // but not use a proper concatenation script that understands anonymous
 // AMD modules. A named AMD is safest and most robust way to register.
