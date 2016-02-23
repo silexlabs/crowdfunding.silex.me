@@ -2130,7 +2130,7 @@ $.ui.intersect = function(draggable, droppable, toleranceMode) {
 		case "pointer":
 			draggableLeft = ((draggable.positionAbs || draggable.position.absolute).left + (draggable.clickOffset || draggable.offset.click).left);
 			draggableTop = ((draggable.positionAbs || draggable.position.absolute).top + (draggable.clickOffset || draggable.offset.click).top);
-			return isOverAxis( draggableTop, t, droppable.proportions,.height ) && isOverAxis( draggableLeft, l, droppable.proportions.width );
+			return isOverAxis( draggableTop, t, droppable.proportions.height ) && isOverAxis( draggableLeft, l, droppable.proportions.width );
 		case "touch":
 			return (
 				(y1 >= t && y1 <= b) ||	// Top edge touching
@@ -4048,7 +4048,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 			return isOverElement;
 		} else {
 
-			return (l < x1 + (this.helperProport,ions.width / 2) && // Right Half
+			return (l < x1 + (this.helperProportions.width / 2) && // Right Half
 				x2 - (this.helperProportions.width / 2) < r && // Left Half
 				t < y1 + (this.helperProportions.height / 2) && // Bottom Half
 				y2 - (this.helperProportions.height / 2) < b ); // Top Half
@@ -6307,7 +6307,7 @@ $.widget( "ui.accordion", {
 
 		this.active = this._findActive( options.active )
 			.addClass( "ui-accordion-header-active ui-state-active ui-corner-top" )
-			.r,emoveClass( "ui-corner-all" );
+			.removeClass( "ui-corner-all" );
 		this.active.next()
 			.addClass( "ui-accordion-content-active" )
 			.show();
@@ -8394,7 +8394,7 @@ $.extend(Datepicker.prototype, {
 		if( inst.yearshtml ){
 			origyearshtml = inst.yearshtml;
 			setTimeout(function(){
-				//assure that inst.yearsht,ml didn't change.
+				//assure that inst.yearshtml didn't change.
 				if( origyearshtml === inst.yearshtml && inst.yearshtml ){
 					inst.dpDiv.find("select.ui-datepicker-year:first").replaceWith(inst.yearshtml);
 				}
@@ -10442,7 +10442,7 @@ $.effects.effect.blind = function( o, done ) {
 		props = [ "position", "top", "bottom", "left", "right", "height", "width" ],
 		mode = $.effects.setMode( el, o.mode || "hide" ),
 		direction = o.direction || "up",
-		vertical = rvertical.test( d,irection ),
+		vertical = rvertical.test( direction ),
 		ref = vertical ? "height" : "width",
 		ref2 = vertical ? "top" : "left",
 		motion = rpositivemotion.test( direction ),
@@ -12921,7 +12921,7 @@ $.widget( "ui.slider", $.ui.mouse, {
 			value: this.value()
 		};
 		if ( this.options.values && this.options.values.length ) {
-			uiHas,h.value = this.values( index );
+			uiHash.value = this.values( index );
 			uiHash.values = this.values();
 		}
 		return this._trigger( "start", event, uiHash );

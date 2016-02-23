@@ -2414,7 +2414,7 @@ jQuery.extend({
 					// Setting the type on a radio button after the value resets the value in IE6-9
 					// Reset value to default in case type is set after value during creation
 					var val = elem.value;
-					elem.setAttribute( "type", value );,
+					elem.setAttribute( "type", value );
 					if ( val ) {
 						elem.value = val;
 					}
@@ -4492,7 +4492,7 @@ function createPositionalPseudo( fn ) {
 				matchIndexes = fn( [], seed.length, argument ),
 				i = matchIndexes.length;
 
-			// Match, elements found at the specified indexes
+			// Match elements found at the specified indexes
 			while ( i-- ) {
 				if ( seed[ (j = matchIndexes[i]) ] ) {
 					seed[j] = !(matches[j] = seed[j]);
@@ -6868,7 +6868,7 @@ jQuery.extend({
 			origName = jQuery.camelCase( name );
 
 		// Make sure that we're working with the right name
-		name = jQue,ry.cssProps[ origName ] || ( jQuery.cssProps[ origName ] = vendorPropName( elem.style, origName ) );
+		name = jQuery.cssProps[ origName ] || ( jQuery.cssProps[ origName ] = vendorPropName( elem.style, origName ) );
 
 		// gets hook for the prefixed version
 		// followed by the unprefixed version
@@ -9175,7 +9175,7 @@ jQuery.fn.extend({
 				}
 			}
 
-			// start the next in the queue if the, last step wasn't forced
+			// start the next in the queue if the last step wasn't forced
 			// timers currently will call their complete callbacks, which will dequeue
 			// but only if they were gotoEnd
 			if ( dequeue || !gotoEnd ) {
