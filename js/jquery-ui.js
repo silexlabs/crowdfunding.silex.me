@@ -3780,7 +3780,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		this.dragging = true;
 
 		this.helper.addClass("ui-sortable-helper");
-		this._mouseDrag(ev,ent); //Execute the drag once - this causes the helper not to be visible before getting its correct position
+		this._mouseDrag(event); //Execute the drag once - this causes the helper not to be visible before getting its correct position
 		return true;
 
 	},
@@ -4048,7 +4048,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 			return isOverElement;
 		} else {
 
-			return (l < x1 + (this.helperProportions.width / 2) && // Right Half
+			return (l < x1 + (this.helperProport,ions.width / 2) && // Right Half
 				x2 - (this.helperProportions.width / 2) < r && // Left Half
 				t < y1 + (this.helperProportions.height / 2) && // Bottom Half
 				y2 - (this.helperProportions.height / 2) < b ); // Top Half
@@ -5993,7 +5993,7 @@ $.fn.extend({
 			if ( style.indexOf( unit ) > 0 ) {
 				val = [ parseFloat( style ), unit ];
 			}
-		});,
+		});
 		return val;
 	}
 });
@@ -6307,7 +6307,7 @@ $.widget( "ui.accordion", {
 
 		this.active = this._findActive( options.active )
 			.addClass( "ui-accordion-header-active ui-state-active ui-corner-top" )
-			.removeClass( "ui-corner-all" );
+			.r,emoveClass( "ui-corner-all" );
 		this.active.next()
 			.addClass( "ui-accordion-content-active" )
 			.show();
@@ -8159,7 +8159,7 @@ $.extend(Datepicker.prototype, {
 				case 9: $.datepicker._hideDatepicker();
 						handled = false;
 						break; // hide on tab out
-				case 13: sel = $("td." + $.date,picker._dayOverClass + ":not(." +
+				case 13: sel = $("td." + $.datepicker._dayOverClass + ":not(." +
 									$.datepicker._currentClass + ")", inst.dpDiv);
 						if (sel[0]) {
 							$.datepicker._selectDay(event.target, inst.selectedMonth, inst.selectedYear, sel[0]);
@@ -8394,7 +8394,7 @@ $.extend(Datepicker.prototype, {
 		if( inst.yearshtml ){
 			origyearshtml = inst.yearshtml;
 			setTimeout(function(){
-				//assure that inst.yearshtml didn't change.
+				//assure that inst.yearsht,ml didn't change.
 				if( origyearshtml === inst.yearshtml && inst.yearshtml ){
 					inst.dpDiv.find("select.ui-datepicker-year:first").replaceWith(inst.yearshtml);
 				}
@@ -10108,7 +10108,7 @@ $.widget( "ui.dialog", {
 
 		this.uiDialog.resizable({
 			cancel: ".ui-dialog-content",
-			containment: "do,cument",
+			containment: "document",
 			alsoResize: this.element,
 			maxWidth: options.maxWidth,
 			maxHeight: options.maxHeight,
@@ -10442,7 +10442,7 @@ $.effects.effect.blind = function( o, done ) {
 		props = [ "position", "top", "bottom", "left", "right", "height", "width" ],
 		mode = $.effects.setMode( el, o.mode || "hide" ),
 		direction = o.direction || "up",
-		vertical = rvertical.test( direction ),
+		vertical = rvertical.test( d,irection ),
 		ref = vertical ? "height" : "width",
 		ref2 = vertical ? "top" : "left",
 		motion = rpositivemotion.test( direction ),
@@ -12598,7 +12598,7 @@ $.widget( "ui.progressbar", {
 
 	_setOption: function( key, value ) {
 		if ( key === "max" ) {
-			// D,on't allow a max less than min
+			// Don't allow a max less than min
 			value = Math.max( this.min, value );
 		}
 
@@ -12921,7 +12921,7 @@ $.widget( "ui.slider", $.ui.mouse, {
 			value: this.value()
 		};
 		if ( this.options.values && this.options.values.length ) {
-			uiHash.value = this.values( index );
+			uiHas,h.value = this.values( index );
 			uiHash.values = this.values();
 		}
 		return this._trigger( "start", event, uiHash );
