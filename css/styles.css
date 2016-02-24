@@ -1,12 +1,5 @@
 
-        .full-width.editable-style{width:100%;left:0;}
-        .full-height.editable-style{height:100%;top:0;}
-        .normal{font-size:1.35em;line-height:1.65em;}
-        .on-top{z-index:200;}
-        .silex-pages{display:none;}
-    body.enable-mobile {
-        padding: 0;
-    }
+        .full-width.editable-style{width:100%;left:0;}.full-height.editable-style{height:100%;top:0;}.normal{font-size:1.35em;line-height:1.65em;}.on-top{z-index:200;}.silex-pages{display:none;}body.enable-mobile{padding:0;}
     
         .body-initial {
             background-color: rgb(0, 0, 0); 
@@ -20,56 +13,55 @@
             top: 5px; 
             left: 821px; 
             width: 760px; 
-            height: 1375px; 
+            min-height: 1375px; 
         }
         .silex-id-1455416461044-1 {
-            height: 100px; 
             width: 100px; 
             top: -1px; 
             left: 0px; 
             background-color: rgb(38, 38, 38); 
             opacity: 0.25; 
+            min-height: 100px; 
         }
         .silex-id-1455418946894-5 {
-            height: 1145px; 
             width: 903px; 
             top: 158px; 
             left: 100px; 
             background-color: transparent; 
+            min-height: 1145px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455418946894-5 {
             top: 0px; 
             left: 0px; 
             width: 469px; 
-            height: 1926px; 
+            min-height: 1926px; 
         }
         }.silex-id-1455417631272-3 {
-            height: 311px; 
             width: 900px; 
             top: 0px; 
             left: 0px; 
+            min-height: 311px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455417631272-3 {
             top: 12px; 
             left: 0px; 
             width: 469px; 
-            height: 530px; 
+            min-height: 530px; 
         }
         }.silex-id-1455825820358-0 {
-            height: 311px; 
             width: 900px; 
             top: 578px; 
             left: 0px; 
+            min-height: 311px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455825820358-0 {
             top: 513px; 
             left: 0px; 
             width: 469px; 
-            height: 530px; 
             border-color: #000000; 
+            min-height: 530px; 
         }
         }.silex-id-1455826276922-3 {
-            height: 274px; 
             width: 900px; 
             top: 305px; 
             left: -1px; 
@@ -82,16 +74,16 @@
             border-top-right-radius: 5px; 
             border-bottom-right-radius: 5px; 
             border-bottom-left-radius: 5px; 
+            min-height: 274px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826276922-3 {
             border-color: #000000; 
             top: 1122px; 
             left: 0px; 
             width: 469px; 
-            height: 386px; 
+            min-height: 386px; 
         }
         }.silex-id-1455826200198-2 {
-            height: 35px; 
             width: 292px; 
             top: 45px; 
             left: 53px; 
@@ -107,16 +99,16 @@
             border-right-color: rgb(255, 255, 255); 
             border-bottom-color: rgb(255, 255, 255); 
             border-left-color: rgb(255, 255, 255); 
+            min-height: 35px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826200198-2 {
             border-color: #ffffff; 
             top: 13px; 
             left: 37px; 
             width: 150px; 
-            height: 95px; 
+            min-height: 95px; 
         }
         }.silex-id-1455826942700-6 {
-            height: 35px; 
             width: 306px; 
             top: 45px; 
             left: 518px; 
@@ -132,15 +124,15 @@
             border-right-color: rgb(255, 255, 255); 
             border-bottom-color: rgb(255, 255, 255); 
             border-left-color: rgb(255, 255, 255); 
+            min-height: 35px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826942700-6 {
             top: 17px; 
             left: 269px; 
             width: 150px; 
-            height: 95px; 
+            min-height: 95px; 
         }
         }.silex-id-1455419152621-6 {
-            height: 139px; 
             width: 842px; 
             top: 103px; 
             left: 50px; 
@@ -149,43 +141,44 @@
             border-right-color: rgb(0, 0, 0); 
             border-bottom-color: rgb(0, 0, 0); 
             border-left-color: rgb(0, 0, 0); 
+            min-height: 139px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455419152621-6 {
             top: 4px; 
             left: 0px; 
             width: 469px; 
-            height: 143px; 
             border-color: #000000; 
+            min-height: 143px; 
         }
         }.silex-id-1455418122406-4 {
-            height: 72px; 
             width: 175px; 
             top: 170px; 
             left: 690px; 
             background-color: transparent; 
+            min-height: 72px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455418122406-4 {
             top: 301px; 
             left: 153px; 
             width: 163px; 
-            height: 73px; 
+            min-height: 73px; 
         }
         }.silex-id-1455827575556-1 {
-            height: 94px; 
             width: 388px; 
             top: 877px; 
             left: 76px; 
+            min-height: 94px; 
         }
         .silex-id-1455827571679-0 {
-            height: 116px; 
             width: 210px; 
             top: 873px; 
             left: 557px; 
+            min-height: 116px; 
         }
         .silex-id-1442914737143-3 {
-            height: 100px; 
             width: 900px; 
             top: 1047px; 
             left: 0px; 
+            min-height: 100px; 
         }
     
