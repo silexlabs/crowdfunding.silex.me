@@ -110,8 +110,9 @@ $(function() {
     var height = 0;
     var bodyEl = $('body');
     $('body > *').each(function (index) {
-      var el = $('this');
-      if(!el.hasClass('paged-element') || el.hasClass(bodyEl.pageable('option').currentPage)) {
+      var el = $(this);
+      // take elements visible on the current page
+      if(el.hasClass('editable-style') && (!el.hasClass('paged-element') || el.hasClass(bodyEl.pageable('option').currentPage))) {
         var position = el.position();
         var right = position.left + el.width();
         var bottom = position.top + el.height();
@@ -131,4 +132,6 @@ $(function() {
   // resize body on window resize
   $(window).resize(resizeBody);
 
+  // resize on page change (size will vary)
+  $('body').on('pageChanged', resizeBody);
 });
