@@ -1,12 +1,42 @@
 
-        .full-width.editable-style{width:100%;left:0;}
-        .full-height.editable-style{height:100%;top:0;}
-        .normal{font-size:1.35em;line-height:1.65em;}
-        .on-top{z-index:200;}
-        .silex-pages{display:none;}
-    body.enable-mobile {
-        padding: 0;
-    }
+        @media (min-width: 1000px) {
+        @font-face {
+          font-family: 'Jura';
+          font-style: normal;
+          font-weight: 300;
+          src: local('Jura Light'), local('Jura-Light'), url('../assets/jura.woff2') format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        }
+
+        
+            .full-width.editable-style{width:100%;left:0;}
+            .full-height.editable-style{height:100%;top:0;}
+            .normal{font-size:1.35em;line-height:1.65em;}
+            .on-top{z-index:200;}
+            .silex-pages{display:none;}
+
+            body.enable-mobile {
+                padding: 0;
+            }
+            
+            
+            .normal {
+                color: #FFF;
+                font-size: 1.3em;
+                font-family: "Jura", sans-serif;
+            }
+            .normal [href] {
+                color: #009BFF;
+                text-decoration: underline;
+            }
+            body.silex-runtime > .container-element {
+                opacity: 0;
+                transition: opacity .5s;
+            }
+            body.loaded > .container-element {
+                opacity: inherit;
+            }
     
         .body-initial {
             background-color: rgb(0, 0, 0); 
@@ -57,7 +87,7 @@
         }
         }.silex-id-1455825820358-0 {
             width: 900px; 
-            top: 578px; 
+            top: 577px; 
             left: 0px; 
             min-height: 311px; 
         }
@@ -107,6 +137,7 @@
             border-bottom-color: rgb(255, 255, 255); 
             border-left-color: rgb(255, 255, 255); 
             min-height: 35px; 
+            border-color: #000000; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826942700-6 {
             top: 19px; 
@@ -131,6 +162,7 @@
             border-bottom-color: rgb(255, 255, 255); 
             border-left-color: rgb(255, 255, 255); 
             min-height: 35px; 
+            border-color: #000000; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826200198-2 {
             top: 45px; 
