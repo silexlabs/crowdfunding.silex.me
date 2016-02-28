@@ -105,7 +105,10 @@
     <script type="text/javascript" class="silex-script">
         $(window).load(function(){
             // language
-            if(navigator.language.indexOf('fr') > -1) window.location.hash = "#!page-francais";
+            if(navigator.language.indexOf('fr') > -1) {
+                console.log('xxx', window.location.hash);
+                window.location.hash = "#!page-francais";
+            }
             // display with fade in
             $("body").addClass("loaded");
         })
@@ -537,7 +540,7 @@
 
 
     </div>
-    <div data-silex-type="html" class="editable-style silex-id-1455416461044-1 html-element full-width full-height hide-on-mobile" data-silex-id="silex-id-1455416461044-1" style="left: -10px; top: -10px;">
+    <div data-silex-type="html" class="editable-style silex-id-1455416461044-1 html-element full-width full-height hide-on-mobile" data-silex-id="silex-id-1455416461044-1">
         <div class="silex-element-content">
             <iframe http:="" localhost:6805="" api="" 1.0="" github="" exec="" get="" crowdfunding.silex.me="" gh-pages="" editable.htmlhttp:="" editable.htmlsrc="" style="border: none;" width="100%" height="100%" data-silex-iframe-src="//singchan.github.io/jekyll-slideshow/slides/for-silex-template.html"
             src="//singchan.github.io/jekyll-slideshow/slides/for-silex-template.html"></iframe>
