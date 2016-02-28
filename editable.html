@@ -42,16 +42,21 @@
     <script data-silex-static="" type="text/javascript" src="//localhost:6805/static/2.6/front-end.js"></script>
     <style type="text/css" class="silex-style">
         .full-width.editable-style{width:100%;left:0;}
+            
+            /* slideshow */
             .full-height.editable-style{height:100%;top:0;}
-            .normal{font-size:1.35em;line-height:1.65em;}
-            .on-top{z-index:200;}
-            .silex-pages{display:none;}
+            
+            /* container left aligned */
+            .on-top{z-index:10;}
 
+            /* mobile menu */
+            .silex-pages{display:none;}
             body.enable-mobile {
                 padding: 0;
             }
             
-            
+            /* text / fonts */
+            .normal{font-size:1.35em;line-height:1.65em;}
             .normal, input {
                 color: #FFF;
                 font-size: 1.3em;
@@ -62,6 +67,8 @@
                 text-decoration: underline;
             }
             
+            
+            /* icons (link / press) */
             .editable-style.fa {
                 width: 32px;
                 min-height: 32px;
