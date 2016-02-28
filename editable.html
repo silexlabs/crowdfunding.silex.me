@@ -104,21 +104,10 @@
     </style>
     <script type="text/javascript" class="silex-script">
         $(window).load(function(){
+            // language
+            if(navigator.language.indexOf('fr') > -1) window.location.hash = "#!page-francais";
+            // display with fade in
             $("body").addClass("loaded");
-            return;
-            $("head").append(`
-            <style>
-                @media (min-width: 1000px) {
-                @font-face {
-                  font-family: 'Jura';
-                  font-style: normal;
-                  font-weight: 300;
-                  src: local('Jura Light'), local('Jura-Light'), url('assets/jura.woff2') format('woff2');
-                  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-                }
-                }
-            </style>
-            `);
         })
     </script>
     <style class="silex-inline-styles" type="text/css">
@@ -532,6 +521,8 @@
 
 
 
+
+
     <style id="current-page-style">
         .page-english{display:inherit; }
     </style>
@@ -549,7 +540,7 @@
     <div data-silex-type="html" class="editable-style silex-id-1455416461044-1 html-element full-width full-height hide-on-mobile" data-silex-id="silex-id-1455416461044-1" style="left: -10px; top: -10px;">
         <div class="silex-element-content">
             <iframe http:="" localhost:6805="" api="" 1.0="" github="" exec="" get="" crowdfunding.silex.me="" gh-pages="" editable.htmlhttp:="" editable.htmlsrc="" style="border: none;" width="100%" height="100%" data-silex-iframe-src="//singchan.github.io/jekyll-slideshow/slides/for-silex-template.html"
-            src=""></iframe>
+            src="//singchan.github.io/jekyll-slideshow/slides/for-silex-template.html"></iframe>
         </div>
     </div>
     <div data-silex-type="container" class="editable-style silex-id-1455418946894-5 container-element on-top" data-silex-id="silex-id-1455418946894-5">
@@ -745,6 +736,8 @@
         <div data-silex-type="image" class="editable-style silex-id-1456667571632-13 image-element page-link-active" data-silex-id="silex-id-1456667571632-13" style="left: 61px; top: 10px;" data-silex-href="#!page-english"><img src="assets/United_Kingdom.png" class="silex-element-content"></div>
     </div>
     <div class="silex-pages"><img src="//localhost:6805/static/2.6/hamburger.png" data-silex-static="" class="menu-button"><a id="page-english" data-silex-type="page" class="page-element page-link-active">English</a><a id="page-francais" data-silex-type="page" class="page-element">francais</a></div>
+
+
 
 
 
