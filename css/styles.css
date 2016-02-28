@@ -20,11 +20,13 @@
                 font-size: 1.3em;
                 font-family: "Jura", sans-serif;
             }
+            a {
+                text-decoration: inherit;
+            }           
             .normal [href] {
                 color: #009BFF;
                 text-decoration: underline;
             }
-            
             
             /* icons (link / press) */
             .editable-style.fa {
