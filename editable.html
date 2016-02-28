@@ -105,10 +105,8 @@
     <script type="text/javascript" class="silex-script">
         $(window).load(function(){
             // language
-            if(navigator.language.indexOf('fr') > -1) {
-                console.log('xxx', window.location.hash);
-                window.location.hash = "#!page-francais";
-            }
+            if(navigator.language.indexOf('fr') > -1) window.location.hash = "#!page-francais";
+            else window.location.hash = "#!page-english";
             // display with fade in
             $("body").addClass("loaded");
         })
