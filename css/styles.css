@@ -1,16 +1,21 @@
 
         .full-width.editable-style{width:100%;left:0;}
+            
+            /* slideshow */
             .full-height.editable-style{height:100%;top:0;}
-            .normal{font-size:1.35em;line-height:1.65em;}
-            .on-top{z-index:200;}
-            .silex-pages{display:none;}
+            
+            /* container left aligned */
+            .on-top{z-index:10;}
 
+            /* mobile menu */
+            .silex-pages{display:none;}
             body.enable-mobile {
                 padding: 0;
             }
             
-            
-            .normal {
+            /* text / fonts */
+            .normal{font-size:1.35em;line-height:1.65em;}
+            .normal, input {
                 color: #FFF;
                 font-size: 1.3em;
                 font-family: "Jura", sans-serif;
@@ -19,7 +24,25 @@
                 color: #009BFF;
                 text-decoration: underline;
             }
-    @media (min-width: 1000px) {
+            
+            
+            /* icons (link / press) */
+            .editable-style.fa {
+                width: 32px;
+                min-height: 32px;
+                height: 32px;
+                background-color: grey;
+            }
+            .silex-runtime .editable-style.fa {
+                background-color: initial;
+            }
+            
+            /* flags */
+            .image-element.page-link-active {
+                border: 2px solid white;
+            }
+            
+    @media (min-width: 480px) {
         @font-face {
           font-family: 'Jura';
           font-style: normal;
@@ -46,10 +69,10 @@
         }
         .background-initial {
             background-color: transparent; 
-            top: 5px; 
-            left: 821px; 
+            top: 0px; 
+            left: 362px; 
             width: 760px; 
-            min-height: 1375px; 
+            min-height: 1119px; 
         }
         .silex-id-1455416461044-1 {
             width: 100px; 
@@ -64,44 +87,223 @@
             top: 158px; 
             left: 100px; 
             background-color: transparent; 
-            min-height: 1145px; 
+            min-height: 1181px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455418946894-5 {
-            top: 0px; 
-            left: 0px; 
+            top: -114px; 
+            left: 8px; 
             width: 469px; 
             min-height: 2092px; 
         }
-        }.silex-id-1455417631272-3 {
-            width: 900px; 
-            top: 0px; 
+        }.silex-id-1456667571632-13 {
+            min-height: 23px; 
+            width: 40px; 
+            top: 32px; 
+            left: 61px; 
+        }
+        .silex-id-1456667580737-14 {
+            min-height: 24px; 
+            width: 40px; 
+            top: 32px; 
             left: 0px; 
-            min-height: 311px; 
+        }
+        .silex-id-1455417631272-3 {
+            width: 899px; 
+            top: 90px; 
+            left: 0px; 
+            min-height: 219px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455417631272-3 {
-            top: 27px; 
+            top: 29px; 
             left: 10px; 
             width: 449px; 
-            min-height: 498px; 
+            min-height: 410px; 
         }
-        }.silex-id-1455825820358-0 {
-            width: 900px; 
-            top: 577px; 
+        }.silex-id-1456660328713-1 {
+            min-height: 111px; 
+            width: 420px; 
+            top: 319px; 
             left: 0px; 
-            min-height: 311px; 
+            background-color: transparent; 
+        }
+        .silex-id-1456660328716-2 {
+            width: 100px; 
+            top: 0px; 
+            left: 0px; 
+            min-height: 34px; 
+        }
+        .silex-id-1456660328717-3 {
+            width: 145px; 
+            top: 40px; 
+            left: 0px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456660328717-3 {
+            top: 34px; 
+            left: 144px; 
+        }
+        }.silex-id-1456660328718-4 {
+            width: 145px; 
+            top: 40px; 
+            left: 80px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456660328718-4 {
+            top: 48px; 
+            left: 221px; 
+        }
+        }.silex-id-1456665243669-0 {
+            width: 145px; 
+            top: 41px; 
+            left: 155px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456665243669-0 {
+            top: 42px; 
+            left: 213px; 
+            width: 30px; 
+            min-height: 33px; 
+        }
+        }.silex-id-1456666129648-2 {
+            width: 32px; 
+            top: 39px; 
+            left: 235px; 
+            background-color: transparent; 
+            min-height: 32px; 
+        }
+        .silex-id-1456660198201-0 {
+            min-height: 114px; 
+            width: 420px; 
+            top: 319px; 
+            left: 480px; 
+            background-color: transparent; 
+        }
+        .silex-id-1456609951758-1 {
+            width: 100px; 
+            top: 0px; 
+            left: 0px; 
+            min-height: 34px; 
+        }
+        .silex-id-1456606346531-2 {
+            width: 145px; 
+            top: 40px; 
+            left: 0px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456606346531-2 {
+            top: 68px; 
+            left: 237px; 
+        }
+        }.silex-id-1456607099664-3 {
+            width: 145px; 
+            top: 40px; 
+            left: 80px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        .silex-id-1455825820358-0 {
+            width: 899px; 
+            top: 98px; 
+            left: 0px; 
+            min-height: 215px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455825820358-0 {
-            top: 567px; 
+            top: 30px; 
             left: 10px; 
             width: 449px; 
             border-color: #000000; 
-            min-height: 496px; 
+            min-height: 374px; 
         }
-        }.silex-id-1455826276922-3 {
+        }.silex-id-1456666631224-7 {
+            min-height: 111px; 
+            width: 420px; 
+            top: 315px; 
+            left: 0px; 
+            background-color: transparent; 
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456666631224-7 {
+            top: 1502px; 
+            left: 30px; 
+        }
+        }.silex-id-1456666631224-8 {
+            width: 100px; 
+            top: 0px; 
+            left: 0px; 
+            min-height: 34px; 
+        }
+        .silex-id-1456666631224-9 {
+            width: 145px; 
+            top: 41px; 
+            left: 3px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456666631224-9 {
+            top: 1672px; 
+            left: 151px; 
+        }
+        }.silex-id-1456666631224-10 {
+            width: 145px; 
+            top: 41px; 
+            left: 83px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456666631224-10 {
+            top: 1672px; 
+            left: 241px; 
+        }
+        }.silex-id-1456666631224-11 {
+            width: 145px; 
+            top: 41px; 
+            left: 162px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        .silex-id-1456666631224-12 {
+            width: 32px; 
+            top: 39px; 
+            left: 242px; 
+            background-color: transparent; 
+            min-height: 32px; 
+        }
+        .silex-id-1456666631221-3 {
+            min-height: 114px; 
+            width: 420px; 
+            top: 315px; 
+            left: 480px; 
+            background-color: transparent; 
+            border-color: #000000; 
+        }
+        .silex-id-1456666631222-4 {
+            width: 100px; 
+            top: 0px; 
+            left: 0px; 
+            min-height: 34px; 
+        }
+        .silex-id-1456666631222-5 {
+            width: 145px; 
+            top: 40px; 
+            left: 0px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        .silex-id-1456666631222-6 {
+            width: 145px; 
+            top: 40px; 
+            left: 80px; 
+            background-color: transparent; 
+            min-height: 135px; 
+        }
+        .silex-id-1455826276922-3 {
             width: 900px; 
-            top: 305px; 
+            top: 441px; 
             left: -1px; 
-            background-color: rgba(0, 0, 0, 0.482353); 
+            background-color: rgba(0,0,0,0.4823529411764706); 
             border-top-color: rgb(0, 0, 0); 
             border-right-color: rgb(0, 0, 0); 
             border-bottom-color: rgb(0, 0, 0); 
@@ -110,7 +312,7 @@
             border-top-right-radius: 5px; 
             border-bottom-right-radius: 5px; 
             border-bottom-left-radius: 5px; 
-            min-height: 274px; 
+            min-height: 268px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826276922-3 {
             top: 1143px; 
@@ -123,6 +325,7 @@
             width: 306px; 
             top: 45px; 
             left: 518px; 
+            border-width: 0 0 1px 0 ; 
             border-top-width: 0px; 
             border-right-width: 0px; 
             border-bottom-width: 1px; 
@@ -136,18 +339,21 @@
             border-bottom-color: rgb(255, 255, 255); 
             border-left-color: rgb(255, 255, 255); 
             min-height: 35px; 
-            border-color: #000000; 
+            border-color: #ffffff; 
+            border-style: solid; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826942700-6 {
             top: 19px; 
             left: 207px; 
             width: 150px; 
+            border-color: #ffffff; 
             min-height: 95px; 
         }
         }.silex-id-1455826200198-2 {
             width: 292px; 
             top: 45px; 
             left: 53px; 
+            border-color: #000000; 
             border-top-width: 0px; 
             border-right-width: 0px; 
             border-bottom-width: 1px; 
@@ -161,7 +367,8 @@
             border-bottom-color: rgb(255, 255, 255); 
             border-left-color: rgb(255, 255, 255); 
             min-height: 35px; 
-            border-color: #000000; 
+            border-width: 0 0 1px 0 ; 
+            border-style: solid; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1455826200198-2 {
             top: 45px; 
@@ -191,7 +398,7 @@
         }.silex-id-1455418122406-4 {
             width: 175px; 
             top: 170px; 
-            left: 690px; 
+            left: 679px; 
             background-color: transparent; 
             min-height: 72px; 
         }
@@ -203,19 +410,19 @@
         }
         }.silex-id-1455827575556-1 {
             width: 388px; 
-            top: 877px; 
+            top: 788px; 
             left: 76px; 
             min-height: 94px; 
         }
         .silex-id-1455827571679-0 {
             width: 210px; 
-            top: 873px; 
+            top: 784px; 
             left: 557px; 
             min-height: 116px; 
         }
         .silex-id-1442914737143-3 {
             width: 900px; 
-            top: 1047px; 
+            top: 977px; 
             left: 0px; 
             min-height: 100px; 
         }
