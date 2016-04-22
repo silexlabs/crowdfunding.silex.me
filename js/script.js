@@ -6,4 +6,5 @@
             // display with fade in
             $("body").addClass("loaded");
         })
+    window.location = "https://www.ulule.com/silex-websitebuilder/"
     
