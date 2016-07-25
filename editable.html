@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="generator" content="Silex v2.2.6">
-    <link data-silex-static="" href="//preprod.silex.me/static/2.6/normalize.css" rel="stylesheet">
-    <link data-silex-static="" href="//preprod.silex.me/static/2.6/front-end.css" rel="stylesheet">
-    <script data-silex-static="" type="text/javascript" src="//preprod.silex.me/static/2.6/jquery.js"></script>
+    <link data-silex-static="" href="//localhost:6805/static/2.6/normalize.css" rel="stylesheet">
+    <link data-silex-static="" href="//localhost:6805/static/2.6/front-end.css" rel="stylesheet">
+    <script data-silex-static="" type="text/javascript" src="//localhost:6805/static/2.6/jquery.js"></script>
     <style type="text/css">
         :root #header+#content>#left>#rlblock_left{display:none!important;}
     </style>
@@ -34,9 +34,9 @@
     <style type="text/css">
         :root #header+#content>#left>#rlblock_left{display:none!important;}
     </style>
-    <script data-silex-static="" type="text/javascript" src="//preprod.silex.me/static/2.6/jquery-ui.js"></script>
-    <script data-silex-static="" type="text/javascript" src="//preprod.silex.me/static/2.6/pageable.js"></script>
-    <script data-silex-static="" type="text/javascript" src="//preprod.silex.me/static/2.6/front-end.js"></script>
+    <script data-silex-static="" type="text/javascript" src="//localhost:6805/static/2.6/jquery-ui.js"></script>
+    <script data-silex-static="" type="text/javascript" src="//localhost:6805/static/2.6/pageable.js"></script>
+    <script data-silex-static="" type="text/javascript" src="//localhost:6805/static/2.6/front-end.js"></script>
     <style type="text/css" class="silex-style">
         .full-width.editable-style{width:100%;left:0;}.full-height.editable-style{height:100%;top:0;}.on-top{z-index:10;}.silex-pages{display:none;}body.enable-mobile{padding:0;}.normal{font-size:1.35em;line-height:1.65em;}.normal,input{color:#FFF;font-size:1.3em;font-family:"Jura",sans-serif;}a{text-decoration:inherit;}.normal [href]{color:#009BFF;text-decoration:underline;}.editable-style.fa{width:32px;min-height:32px;height:32px;background-color:grey;}.silex-runtime .editable-style.fa{background-color:initial;}.image-element.page-link-active{border:2px solid white;}@media (min-width: 480px) {@font-face{font-family:'Jura';font-style:normal;font-weight:300;src:local('Jura Light'),local('Jura-Light'),url('assets/jura.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;}body.silex-runtime>.container-element{opacity:0;transition:opacity .5s;}body.loaded>.container-element{opacity:inherit;}}
     </style>
@@ -48,7 +48,8 @@
             // display with fade in
             $("body").addClass("loaded");
         })
-    window.location = "https://www.ulule.com/silex-websitebuilder/"
+        
+        // window.location = "https://www.ulule.com/silex-websitebuilder/"
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
@@ -457,8 +458,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+
+
     <style id="current-page-style">
-        .page-francais{display:inherit; }
+        .page-english{display:inherit; }
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
@@ -475,7 +478,7 @@
         </div>
     </div>
     <div data-silex-type="container" class="editable-style silex-id-1455418946894-5 container-element on-top" data-silex-id="silex-id-1455418946894-5">
-        <div data-silex-type="image" class="editable-style silex-id-1456667571632-13 image-element" data-silex-id="silex-id-1456667571632-13" data-silex-href="#!page-english"><img src="assets/United_Kingdom.png" class="silex-element-content"></div>
+        <div data-silex-type="image" class="editable-style silex-id-1456667571632-13 image-element page-link-active" data-silex-id="silex-id-1456667571632-13" data-silex-href="#!page-english"><img src="assets/United_Kingdom.png" class="silex-element-content"></div>
         <div data-silex-type="image" class="editable-style silex-id-1456667580737-14 image-element" data-silex-id="silex-id-1456667580737-14" data-silex-href="#!page-francais"><img src="assets/France.png" class="silex-element-content"></div>
         <div data-silex-type="text" class="editable-style silex-id-1455417631272-3 text-element paged-element page-english" data-silex-id="silex-id-1455417631272-3">
             <div class="silex-element-content normal">
@@ -674,7 +677,7 @@
 </font></span></div>
         </div>
     </div>
-    <div class="silex-pages"><img src="//preprod.silex.me/static/2.6/hamburger.png" data-silex-static="" class="menu-button"><a id="page-english" data-silex-type="page" class="page-element">English</a><a id="page-francais" data-silex-type="page" class="page-element">francais</a></div>
+    <div class="silex-pages"><img src="//localhost:6805/static/2.6/hamburger.png" data-silex-static="" class="menu-button"><a id="page-english" data-silex-type="page" class="page-element page-link-active">English</a><a id="page-francais" data-silex-type="page" class="page-element">francais</a></div>
 
 
 
@@ -736,6 +739,8 @@
     <script type="text/javascript">
         /* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */
     </script>
+
+
 
 </body>
 
